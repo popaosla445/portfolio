@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONARCH — Hair Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#171715;--gold:#c4a574;--cream:#f4f0e9;--muted:#89867f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--black);font-family:Manrope,sans-serif}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+header{height:85px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;background:#171715;color:white}
+.logo{font-family:'Playfair Display';font-size:27px;letter-spacing:4px}
+.logo small{display:block;font:9px Manrope;letter-spacing:5px;color:var(--gold);text-align:center}
+nav{display:flex;gap:30px;font-size:12px}nav a:hover{color:var(--gold)}
+.book{display:inline-block;background:var(--gold);color:#171715;padding:14px 22px;border:0;font-size:11px;letter-spacing:1px;transition:.3s}
+.book:hover{background:white;transform:translateY(-2px)}
+.hero{min-height:650px;display:flex;align-items:center;padding:90px 10%;color:white;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.16)),url('assets/client-look-1.png') center 34%/cover}
+.hero-content{max-width:590px}.eyebrow,.section-tag{color:var(--gold);letter-spacing:4px;font-size:11px}
+h1{font:clamp(55px,8vw,100px) 'Playfair Display';line-height:1.02;margin:25px 0}
+.hero p{color:#dedbd5;line-height:1.9;font-size:14px;max-width:410px}.hero .book{margin-top:35px;padding:19px 35px}
+.section{padding:105px 10%}.center{text-align:center}
+h2{font:clamp(38px,5vw,58px) 'Playfair Display';margin:17px 0 22px}
+.intro{color:var(--muted);font-size:13px;line-height:1.9}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:55px}
+.service{background:#fff;padding:35px 27px;border-bottom:2px solid transparent;transition:.3s}
+.service:hover{transform:translateY(-7px);border-color:var(--gold)}
+.service-number{font:28px 'Playfair Display';color:var(--gold)}
+.service h3{font:25px 'Playfair Display';margin:20px 0 12px}
+.service p{font-size:12px;color:var(--muted);line-height:1.8;min-height:65px}
+.price{margin-top:24px;font-size:14px;font-weight:700}
+.dark{background:var(--black);color:white}
+.dark .intro{color:#aaa}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:45px}
+.gallery figure{overflow:hidden;background:#242321}
+.gallery img{display:block;width:100%;height:480px;object-fit:cover;transition:.5s}
+.gallery figure:hover img{transform:scale(1.035)}
+.gallery figcaption{padding:15px 18px;color:#d9d0c3;font-size:11px;letter-spacing:1px}
+.master-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:45px}
+.master-grid img{width:100%;height:470px;object-fit:cover}
+.master-grid h3{font:36px 'Playfair Display';margin:20px 0}
+.master-grid p{font-size:13px;color:#777;line-height:2}
+.booking{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.booking form{display:grid;gap:15px}
+input,select{width:100%;padding:17px;background:white;border:1px solid #dedbd5;font:13px Manrope;outline:none}
+input:focus,select:focus{border-color:var(--gold)}
+.booking form button{padding:18px}
+footer{background:#111;color:white;padding:45px 10%;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+footer span{color:var(--gold)}
+@media(max-width:800px){
+header{padding:0 5%}nav{display:none}.hero{min-height:570px;padding:70px 7%}
+.section{padding:75px 7%}.services{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}
+.gallery img{height:420px}.master-grid,.booking{grid-template-columns:1fr}
+.master-grid img{height:350px}footer{gap:20px;flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#">MONARCH<small>HAIR STUDIO</small></a>
+<nav><a href="#about">О НАС</a><a href="#services">УСЛУГИ</a><a href="#works">РАБОТЫ</a><a href="#contacts">КОНТАКТЫ</a></nav>
+<a class="book" href="#booking">ЗАПИСАТЬСЯ ↗</a>
+</header>
+<section class="hero"><div class="hero-content">
+<div class="eyebrow">BEAUTY • STYLE • CONFIDENCE</div>
+<h1>Твоя красота.<br>Наше искусство.</h1>
+<p>Мы создаём индивидуальный стиль, подчёркиваем естественную красоту и превращаем обычный уход за волосами в особенный ритуал.</p>
+<a href="#booking" class="book">ЗАПИСАТЬСЯ НА ВИЗИТ ↗</a>
+</div></section>
+<section class="section center" id="about">
+<div class="section-tag">WELCOME TO MONARCH</div><h2>Красота в каждой детали</h2>
+<p class="intro">MONARCH — пространство, где профессионализм встречается<br>с эстетикой, а каждая деталь имеет значение.</p>
+</section>
+<section class="section" id="services"><div class="center">
+<div class="section-tag">OUR SERVICES</div><h2>Наши услуги</h2><p class="intro">Индивидуальный подход к каждому гостю</p></div>
+<div class="services">
+<article class="service"><div class="service-number">01</div><h3>Стрижки</h3><p>Идеальная форма, индивидуальный стиль и внимание к деталям.</p><div class="price">от 2 000 ₽</div></article>
+<article class="service"><div class="service-number">02</div><h3>Окрашивание</h3><p>Современные техники, красивые оттенки и бережный уход.</p><div class="price">от 4 500 ₽</div></article>
+<article class="service"><div class="service-number">03</div><h3>Укладки</h3><p>Элегантные образы для особенных событий и каждого дня.</p><div class="price">от 1 500 ₽</div></article>
+</div></section>
+<section class="section dark" id="works"><div class="center">
+<div class="section-tag">OUR PORTFOLIO</div><h2>Искусство преображения</h2><p class="intro">Реальные образы и работы нашего салона</p></div>
+<div class="gallery">
+<figure><img src="assets/client-look-1.png" alt="Длинные многослойные волосы с мягким объёмом"><figcaption>МЯГКИЕ СЛОИ • ЕСТЕСТВЕННЫЙ ОБЪЁМ</figcaption></figure>
+<figure><img src="assets/client-look-2.png" alt="Каскадная стрижка с обрамляющими лицо прядями"><figcaption>КАСКАД • ОБРАМЛЕНИЕ ЛИЦА</figcaption></figure>
+</div></section>
+<section class="section" id="team"><div class="center"><div class="section-tag">OUR TEAM</div><h2>В руках профессионалов</h2></div>
+<div class="master-grid"><img src="assets/client-look-2.png" alt="Пример работы мастера">
+<div><div class="section-tag">MEET OUR STYLISTS</div><h3>Ваш стиль — наша страсть</h3><p>Наши мастера постоянно развиваются, изучают новые техники и следят за мировыми тенденциями. Мы не просто меняем причёски — мы помогаем раскрыть индивидуальность.</p></div></div>
+</section>
+<section class="section" id="booking"><div class="booking">
+<div><div class="section-tag">BOOK YOUR VISIT</div><h2>Время для себя</h2><p class="intro">Выберите удобную услугу и оставьте заявку. Мы свяжемся с вами для подтверждения записи.</p></div>
+<form id="bookingForm"><input name="name" placeholder="Ваше имя" required><input name="phone" type="tel" placeholder="Номер телефона" required>
+<select name="service" required><option value="">Выберите услугу</option><option>Стрижка</option><option>Окрашивание</option><option>Укладка</option></select>
+<input name="date" type="date" required><button class="book" type="submit">ОТПРАВИТЬ ЗАЯВКУ ↗</button><p id="result" class="intro" aria-live="polite"></p></form>
+</div></section>
+<footer id="contacts"><a class="logo" href="#">MONARCH<small>HAIR STUDIO</small></a><div>Ежедневно: 10:00–21:00</div><div>Телефон: +7 (999) 000-00-00</div><span>© 2026 MONARCH</span></footer>
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();const data=new FormData(this);
+document.getElementById('result').textContent='Спасибо, '+data.get('name')+'! Заявка заполнена. Для реальной записи подключите отправку данных администратору.';
+});
+</script>
+</body></html>
